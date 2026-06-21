@@ -1,0 +1,41 @@
+
+                  @import "@brand/styles/theme.scss";
+                
+.video-downloader-iframe-wrap {
+  position: fixed;
+  top: 3px;
+  right: 3px;
+  z-index: 92147483645;
+  width: 312px;
+  height: auto;
+  background: var(--backgroundOpacityMurky, rgba(255, 255, 255, 0.95));
+  transition: opacity 0.2s;
+  border: none;
+  margin-right: 10px;
+  overflow: hidden;
+  border-radius: 16px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25), 0 4px 12px rgba(0, 0, 0, 0.15);
+
+  /* RTL positioning: flip side only */
+  &.rtl {
+    right: auto;
+    left: 3px;
+    margin-right: 0;
+    margin-left: 10px;
+  }
+}
+
+.video-downloader-iframe {
+  width: 100%;
+  height: auto;
+  border: none;
+  border-radius: 16px;
+  display: block;
+  transition: opacity 0.2s;
+  opacity: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  box-shadow: none;
+  backdrop-filter: none;
+  background: transparent; /* Ensure iframe doesn't interfere with popup background */
+}

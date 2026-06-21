@@ -1,0 +1,98 @@
+$main-font: 'Inter';
+$main-font-bold: 'Inter';
+
+:root {
+    --backgroundOpacityMurky: rgba(255, 255, 255, 0.95);
+    --onBackgroundLight: rgba(36, 36, 36, 0.10);
+    --background: #FFF;
+    --onBackground: #242424;
+    --accent: #0F71F0;
+    --default-black: rgba(0, 0, 0, 0.00);
+    --backgroundShadow: rgba(0, 0, 0, 0.14);
+    --onAccent: #FFF;
+    --onAccentDisabled: #B2D4FC;
+    --onBackgroundDisabled: #919191;
+    --onBackgroundSecondary: #5B5B5B;
+    --onBackgroundExtraLight: #F4F4F4;
+    --accentHighContrast: #0E68DD;
+    --backgroundButtonDisabled: rgba(68, 68, 68, 0.10);
+    --onBackgroundExtraLight: #F4F4F4;
+    --scrollTrack: #E8E8E8;
+    --scrollThumb: #A1A1A1;
+    --buttonHover: #E0E0E0;
+    --critical: #D40404;
+    --img-logo: url('~@brand/assets/images/logo.svg');
+    --img-completed: url('~@brand/assets/images/status_ok.svg');
+    --img-alert: url('~@brand/assets/images/alert.svg');
+    --img-info: url('~@brand/assets/images/info.svg');
+    --img-tooltip: url('~@brand/assets/images/light/tooltip.svg');
+    --no-video-img: url('~@brand/assets/images/light/no-video-illustration.svg');
+}
+
+html[data-gen-theme="dark"] {
+    --backgroundOpacityMurky: rgba(0, 0, 0, 0.70);
+    --onBackgroundLight: rgba(255, 255, 255, 0.15);
+    --background: #272727;
+    --onBackground: #FFF;
+    --accent: #3F8DF3;
+    --default-black: rgba(0, 0, 0, 0.00);
+    --backgroundShadow: rgba(0, 0, 0, 0.14);
+    --onAccent: #FFF;
+    --onAccentDisabled: #99C6FB;
+    --onBackgroundDisabled: #8F8F8F;
+    --onBackgroundSecondary: #C7C7C7;
+    --onBackgroundExtraLight: #323232;
+    --accentHighContrast: #3F8DF3;
+    --backgroundButtonDisabled: rgba(68, 68, 68, 0.10);
+    --buttonHover: rgba(255, 255, 255, 0.1);
+    --critical: #FF4242;
+    --onBackgroundExtraLight: #323232;
+    --scrollTrack: #323232;
+    --scrollThumb: #505050;
+    --img-completed: url('~@brand/assets/images/dark/status_ok.svg');
+    --img-alert: url('~@brand/assets/images/dark/alert.svg');
+    --img-info: url('~@brand/assets/images/info.svg');
+    --img-tooltip: url('~@brand/assets/images/dark/tooltip.svg');
+    --no-video-img: url('~@brand/assets/images/dark/no-video-illustration.svg');
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('@brand/assets/fonts/Inter-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('@brand/assets/fonts/Inter-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('@brand/assets/fonts/Inter-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('@brand/assets/fonts/Inter-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('@brand/assets/fonts/Inter-ExtraBold.woff2') format('woff2');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
